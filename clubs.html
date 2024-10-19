@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/styles/base.css" />
+    <link rel="stylesheet" href="./assets/styles/clubs/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlZGQGnQs4wqQPYl9FW1QlYdKrpYRvWKM&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="./assets/js/map.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d5ce6820b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header-logo" href="/"
+        ><p class="header-title">
+          So'<span class="header-title-span">fit</span>
+        </p></a
+      >
+      <nav class="header-nav">
+        <ul class="header-ul">
+          <li class="header-li">
+            <a class="header-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" href="./clubs.html">Clubs</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" href="./abonnements.html">Abonnements</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" href="./faq.html">FAQ</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <ul>
+        <li class="header-li">
+          <a class="header-link" href="./connexion.html">Connexion</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="clubs-hero">
+        <div class="clubs-left">
+          <h1 class="clubs-left-title">Nos clubs So'Fit</h1>
+          <p class="clubs-left-description">Des clubs partout en france !</p>
+        </div>
+        <img
+          loading="lazy"
+          class="clubs-left-img"
+          src="./assets/images/pin.png"
+        />
+      </section>
+      <section class="clubs-container">
+        <h2 class="clubs-title">Retrouvez nous dans toute la France</h2>
+        <div class="clubs-cards">
+          <div class="clubs-card">
+            <img
+              loading="lazy"
+              class="clubs-card-img"
+              src="./assets/images/Paris.png"
+              alt=""
+            />
+            <div class="clubs-card-info">
+              <h3 class="clubs-card-name">So'Fit Paris</h3>
+              <p class="clubs-card-adresse">123 rue de la liberté, 75000</p>
+              <button
+                class="clubs-card-btn"
+                onclick="openGoogleMapsDirections('123 rue de la liberté, Paris')"
+              >
+                Itinéraire
+              </button>
+            </div>
+          </div>
+          <div class="clubs-card">
+            <img
+              loading="lazy"
+              class="clubs-card-img"
+              src="./assets/images/Lille.png"
+              alt=""
+            />
+            <div class="clubs-card-info">
+              <h3 class="clubs-card-name">So'Fit Lille</h3>
+              <p class="clubs-card-adresse">24 Rue de Lille, 59000</p>
+              <button
+                class="clubs-card-btn"
+                onclick="openGoogleMapsDirections('24 Rue de Lille, 59000')"
+              >
+                Itinéraire
+              </button>
+            </div>
+          </div>
+          <div class="clubs-card">
+            <img
+              loading="lazy"
+              class="clubs-card-img"
+              src="./assets/images/Bordeaux.png"
+              alt=""
+            />
+            <div class="clubs-card-info">
+              <h3 class="clubs-card-name">So'Fit Bordeaux</h3>
+              <p class="clubs-card-adresse">55 Rue Saint-Sernin, 33000</p>
+              <button
+                class="clubs-card-btn"
+                onclick="openGoogleMapsDirections('55 Rue Saint-Sernin, 33000')"
+              >
+                Itinéraire
+              </button>
+            </div>
+          </div>
+          <div class="clubs-card">
+            <img
+              loading="lazy"
+              class="clubs-card-img"
+              src="./assets/images/Brest.png"
+              alt=""
+            />
+            <div class="clubs-card-info">
+              <h3 class="clubs-card-name">So'Fit Brest</h3>
+              <p class="clubs-card-adresse">23 Rue de la Porte, 29200</p>
+              <button
+                class="clubs-card-btn"
+                onclick="openGoogleMapsDirections('23 Rue de la Porte, 29200')"
+              >
+                Itinéraire
+              </button>
+            </div>
+          </div>
+          <div class="clubs-card">
+            <img
+              loading="lazy"
+              class="clubs-card-img"
+              src="./assets/images/Nantes.png"
+              alt=""
+            />
+            <div class="clubs-card-info">
+              <h3 class="clubs-card-name">So'Fit Nantes</h3>
+              <p class="clubs-card-adresse">34 Rue Maréchal Joffre, 44000</p>
+              <button
+                class="clubs-card-btn"
+                onclick="openGoogleMapsDirections('34 Rue Maréchal Joffre, 44000')"
+              >
+                Itinéraire
+              </button>
+            </div>
+          </div>
+          <div class="clubs-card">
+            <img
+              loading="lazy"
+              class="clubs-card-img"
+              src="./assets/images/Valenciennes.png"
+              alt=""
+            />
+            <div class="clubs-card-info">
+              <h3 class="clubs-card-name">So'Fit Anzin</h3>
+              <p class="clubs-card-adresse">80 Av. Roland Moreno, 59410</p>
+              <button
+                class="clubs-card-btn"
+                onclick="openGoogleMapsDirections('80 Av. Roland Moreno, 59410')"
+              >
+                Itinéraire
+              </button>
+            </div>
+          </div>
+          <div class="clubs-card">
+            <img
+              loading="lazy"
+              class="clubs-card-img"
+              src="./assets/images/Strasbourg.png"
+              alt=""
+            />
+            <div class="clubs-card-info">
+              <h3 class="clubs-card-name">So'Fit Strasbourg</h3>
+              <p class="clubs-card-adresse">56 Rue du Rieth, 67200</p>
+              <button
+                class="clubs-card-btn"
+                onclick="openGoogleMapsDirections('56 Rue du Rieth, 67200')"
+              >
+                Itinéraire
+              </button>
+            </div>
+          </div>
+          <div class="clubs-card">
+            <img
+              loading="lazy"
+              class="clubs-card-img"
+              src="./assets/images/Marseille.png"
+              alt=""
+            />
+            <div class="clubs-card-info">
+              <h3 class="clubs-card-name">So'Fit Marseille</h3>
+              <p class="clubs-card-adresse">19 Rue de la République, 13001</p>
+              <button
+                class="clubs-card-btn"
+                onclick="openGoogleMapsDirections('19 Rue de la République, 13001')"
+              >
+                Itinéraire
+              </button>
+            </div>
+          </div>
+          <div class="clubs-card">
+            <img
+              loading="lazy"
+              class="clubs-card-img"
+              src="./assets/images/Toulouse.png"
+              alt=""
+            />
+            <div class="clubs-card-info">
+              <h3 class="clubs-card-name">So'Fit Toulouse</h3>
+              <p class="clubs-card-adresse">25 Rue Roquelaine, 31000</p>
+              <button
+                class="clubs-card-btn"
+                onclick="openGoogleMapsDirections('25 Rue Roquelaine, 31000')"
+              >
+                Itinéraire
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a class="footer-link" href="./index.html">Accueil</a></li>
+            <li><a class="footer-link" href="./clubs.html">Clubs</a></li>
+            <li>
+              <a class="footer-link" href="./abonnements.html">Abonnements</a>
+            </li>
+            <li><a class="footer-link" href="./faq.html">FAQ</a></li>
+            <li><a class="footer-link" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <a class="footer-link" href="mailto:contact@sofit.com"
+            ><i class="fa-solid fa-envelope"></i>&nbsp;: contact@sofit.com</a
+          >
+          <a class="footer-link" href="tel:+336XXXXXXXX"
+            ><i class="fa-solid fa-phone"></i>&nbsp;: +33 6 XX XX XX XX</a
+          >
+        </div>
+        <div class="footer-section">
+          <h3>Suivez-nous</h3>
+          <ul class="social-icons">
+            <li class="footer-list">
+              <a class="footer-link" href="https://www.facebook.com/sofit"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li class="footer-list">
+              <a class="footer-link" href="https://twitter.com/sofit_officiel"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li class="footer-list">
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/sofit_officiel/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script type="text/javascript" src="./assets/js/header.js"></script>
+</html>

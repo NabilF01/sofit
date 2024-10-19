@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700;900&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans';
+    background: #F1F1F1;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+main{
+    padding: 0 10rem;
+}
+@media screen and (max-width: 768px){
+    main{
+        padding: 0 2rem;
+    }
+}
+h3{
+  margin: 0;
+  padding: 0;
+}
+
+/* header css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    align-items: center;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.12);
+  }
+  .header-logo{
+    cursor: pointer;
+  }
+  .header-ul {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+  }
+  .header-title {
+    color: #e28936;
+    font-size: 2.625rem;
+    font-weight: 900;
+  }
+  .header-title-span {
+    font-size: 2.0625rem;
+    text-transform: uppercase;
+  }
+  .header-link {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  
+  .active {
+    color: #e28936;
+    font-weight: 900;
+  }
+
+  /* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer-link.fa-envelope,
+.footer-link.fa-phone,
+.footer-link.fa-house,
+.footer-link.fa-facebook,
+.footer-link.fa-twitter,
+.footer-link.fa-instagram,
+.footer-link.fa-clock {
+  font-size: 1.5rem;
+  color: #fffefe;
+  margin-right: 1rem;
+}
+.footer-link{
+  color: #fffefe;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.social-icons{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list .footer-link .fa-facebook{
+color: #4867aa;
+}
+.footer-list .footer-link .fa-x-twitter{
+  color: white;
+}
+.footer-list .footer-link .fa-instagram{
+  color: #e0019a
+  ;
+}
+
+@media screen and (max-width:480px ){
+  h2{
+    font-size: 1.5rem !important;
+  }
+  h3{
+    font-size: 2rem !important;
+  }
+  h1{
+    font-size: 2rem !important;
+  }
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 801px){
+  h2{
+    font-size: 1.75rem !important;
+  }
+  h3{
+    font-size: 1.5rem !important;
+  }
+  h1{
+    font-size: 2.5rem !important;
+  }
+  .header{
+    flex-direction: column;
+
+  }
+  .header-ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer-container{
+    gap: 2rem;
+  }
+  .footer-section{
+    align-items: center;
+    
+  }
+}

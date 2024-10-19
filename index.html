@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/styles/base.css" />
+    <link rel="stylesheet" href="./assets/styles/home/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <script
+      src="https://kit.fontawesome.com/d5ce6820b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlZGQGnQs4wqQPYl9FW1QlYdKrpYRvWKM&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="./assets/js/map.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header-logo" href="/"
+        ><p class="header-title">
+          So'<span class="header-title-span">fit</span>
+        </p></a
+      >
+      <nav class="header-nav">
+        <ul class="header-ul">
+          <li class="header-li">
+            <a class="header-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" href="./clubs.html">Clubs</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" href="./abonnements.html">Abonnements</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" href="./faq.html">FAQ</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <ul>
+        <li class="header-li">
+          <a class="header-link" href="./connexion.html">Connexion</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero-left">
+          <h1 class="hero-h1">
+            Défiez-vous, <br />Dépassez-vous, <br />Épanouissez-vous
+          </h1>
+          <a href="#discipline-section" class="hero-btn">Découvrir</a>
+        </div>
+
+        <div class="hero-right">
+          <img
+            loading="lazy"
+            class="hero-right-img"
+            src="./assets/images/hero-image.png"
+            alt="image de héros"
+          />
+          <div class="hero-circle"></div>
+        </div>
+      </section>
+
+      <section class="section-search">
+        <img src="./assets/images/search.png" alt="" />
+        <div class="search-bar">
+          <h2>Rechercher un club :</h2>
+          <form class="search-form">
+            <label for="search-club"></label>
+            <input
+              type="search"
+              id="search-club"
+              name="search-club"
+              class="search-input"
+              placeholder="ex: 123 rue du Maréchal foch"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+      </section>
+
+      <section id="discipline-section" class="section-disc">
+        <h2 class="disc-h2">Nos 4 grandes disciplines :</h2>
+        <div class="disc-cards">
+          <div class="disc-card">
+            <img
+              class="disc-img"
+              loading="lazy"
+              src="./assets/images/card-1.png"
+              alt=""
+            />
+            <div class="card-container">
+              <h4 class="disc-title">Renforcement musculaire / Tonus</h4>
+              <p>4 programmes de 3 séances de 2h</p>
+            </div>
+          </div>
+          <div class="disc-card">
+            <img
+              class="disc-img"
+              loading="lazy"
+              src="./assets/images/card-2.png"
+              alt=""
+            />
+            <div class="card-container">
+              <h4 class="disc-title">Prise de masse / Performance</h4>
+              <p>3 programmes de 4 séances de 3h</p>
+            </div>
+          </div>
+          <div class="disc-card">
+            <img
+              class="disc-img"
+              loading="lazy"
+              src="./assets/images/card-3.png"
+              alt=""
+            />
+            <div class="card-container">
+              <h4 class="disc-title">Méditation / Bien-être</h4>
+              <p>10 séances d'1 h</p>
+            </div>
+          </div>
+          <div class="disc-card">
+            <img
+              class="disc-img"
+              loading="lazy"
+              src="./assets/images/card-4.png"
+              alt=""
+            />
+            <div class="card-container">
+              <h4 class="disc-title">Yoga / Stretching</h4>
+              <p>12 séances de 4h</p>
+            </div>
+          </div>
+        </div>
+        <a href="/abonnements.html" class="disc-btn" type="button"
+          >En savoir plus</a
+        >
+      </section>
+
+      <section class="section-map">
+        <h2 class="map-h2">Où nous trouver :</h2>
+        <div id="map" style="height: 500px; margin-bottom: 2rem"></div>
+        <button
+          class="map-btn"
+          type="button"
+          onclick="openGoogleMapsDirections('Paris')"
+        >
+          Itinéraire
+        </button>
+      </section>
+
+      <section class="section-contact">
+        <h2 class="contact-h2">Nous contacter :</h2>
+
+        <form class="contact-form">
+          <div class="contact-info">
+            <div class="contact-field">
+              <label for="contact-nom">Nom :</label>
+              <input
+                type="text"
+                id="contact-nom"
+                name="contact-nom"
+                class="contact-input"
+                placeholder="Votre nom"
+              />
+            </div>
+            <div class="contact-field">
+              <label for="contact-email">E-mail :</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="contact-email"
+                class="contact-input"
+                placeholder="Votre e-mail"
+              />
+            </div>
+          </div>
+          <div class="contact-field message">
+            <label for="contact-msg">Message :</label>
+            <textarea
+              rows="10"
+              cols="100"
+              name="contact-msg"
+              id="contact-msg"
+              form="usrform"
+              class="contact-input"
+              placeholder="Entrez votre message ici..."
+            ></textarea>
+          </div>
+          <div>
+            <input type="checkbox" id="confid" name="confid" unchecked />
+            <label for="confid"
+              >J'accepte les termes de la politique de confidentialité.</label
+            >
+          </div>
+          <div>
+            <input type="checkbox" id="rgpd" name="rgpd" unchecked />
+            <label for="rgpd"
+              >Je consens à ce que mes données personnelles soient traitées
+              conformément à la politique de confidentialité de ce site.</label
+            >
+          </div>
+          <div>
+            <input type="checkbox" id="mark" name="mark" unchecked />
+            <label for="mark"
+              >J'accepte de recevoir des communications marketing, promotions et
+              mises à jour de ce site.</label
+            >
+          </div>
+          <button class="hero-btn" type="button">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a class="footer-link" href="./index.html">Accueil</a></li>
+            <li><a class="footer-link" href="./clubs.html">Clubs</a></li>
+            <li>
+              <a class="footer-link" href="./abonnements.html">Abonnements</a>
+            </li>
+            <li><a class="footer-link" href="./faq.html">FAQ</a></li>
+            <li><a class="footer-link" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <a class="footer-link" href="mailto:contact@sofit.com"
+            ><i class="fa-solid fa-envelope"></i>&nbsp;: contact@sofit.com</a
+          >
+          <a class="footer-link" href="tel:+336XXXXXXXX"
+            ><i class="fa-solid fa-phone"></i>&nbsp;: +33 6 XX XX XX XX</a
+          >
+        </div>
+        <div class="footer-section">
+          <h3>Suivez-nous</h3>
+          <ul class="social-icons">
+            <li class="footer-list">
+              <a class="footer-link" href="https://www.facebook.com/sofit"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li class="footer-list">
+              <a class="footer-link" href="https://twitter.com/sofit_officiel"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li class="footer-list">
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/sofit_officiel/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./assets/js/header.js"></script>
+</html>

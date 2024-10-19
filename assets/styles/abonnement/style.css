@@ -1,0 +1,211 @@
+.abonnement-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 0;
+}
+.abonnement-left-title {
+  font-size: 2.625rem;
+  font-weight: 900;
+}
+.abonnement-left-description {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.abonnement-left-img {
+  width: 30%;
+  animation: bounce 4s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.abonnement-cards-title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.abonnement-card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.abonnement-card-content {
+  height: 40rem;
+  background-color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+.abonnement-card-content:first-child:hover {
+  border: 1px solid #845fe9;
+}
+.abonnement-card-content:nth-child(2):hover {
+  border: 1px solid #f75b44;
+}
+.abonnement-card-content:last-child:hover {
+  border: 1px solid #e4668d;
+}
+.abonnement-card-content-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.premium {
+  color: #f75b44;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+}
+.starter {
+  color: #845fe9;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+}
+.expert {
+  color: #e4668d;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+}
+.abonnement-card-content-img {
+  width: 40%;
+  animation: bounce-reverse 4s infinite ease-in-out;
+}
+@keyframes bounce-reverse {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.abonnement-card-content-img {
+  width: 40%;
+  animation: bounce-reverse 4s infinite ease-in-out;
+}
+.abonnement-card-content-img-reverse {
+  width: 40%;
+  animation: bounce-reverse-2 4s infinite ease-in-out;
+}
+@keyframes bounce-reverse {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bounce-reverse-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.abonnement-card-lists {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+.abonnement-card-list {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+
+.fa-check.starter {
+  background-color: #845fe9;
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  font-size: 0.5rem;
+  color: white;
+}
+.fa-check.premium {
+  background-color: #f75b44;
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  font-size: 0.5rem;
+  color: white;
+}
+.fa-check.expert {
+  background-color: #e4668d;
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  font-size: 0.5rem;
+  color: white;
+}
+.abonnement-card-button-starter {
+  border: none;
+  color: white;
+  background-color: #845fe9;
+  padding: 1rem 4rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.abonnement-card-button-premium {
+  border: none;
+  color: white;
+  background-color: #f75b44;
+  border-radius: 0.25rem;
+  padding: 1rem 4rem;
+  cursor: pointer;
+}
+.abonnement-card-button-expert {
+  border: none;
+  color: white;
+  background-color: #e4668d;
+  padding: 1rem 4rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+  .abonnement-card-container {
+    flex-direction: column;
+  }
+  .abonnement-left-title {
+    font-size: 2rem;
+  }
+  .abonnement-left-description {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .abonnement-hero {
+    flex-direction: column-reverse;
+  }
+}

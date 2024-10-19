@@ -1,0 +1,107 @@
+.faq-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 0;
+}
+.faq-left-title {
+  font-size: 2.625rem;
+  font-weight: 900;
+}
+.faq-left-description {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.faq-left-img {
+  width: 30%;
+  animation: bounce 4s infinite ease-in-out;
+}
+.faq-container{
+    display: flex;
+    align-items: center;
+}
+
+.faq-container-img{
+    width: 35%;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.faq-accordion-btn {
+  background-color: #ff731f;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.activefaq,
+.faq-accordion-btn:hover {
+  background-color: #c25513;
+  padding: 1rem 0;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.faq-panel {
+  padding: 0 18px;
+  background-color: #f1f1f1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Style the icon indicating the state of the accordion */
+.faq-accordion-btn:after {
+  content: "\25BC"; /* Unicode character for down arrow */
+  font-size: 16px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style the icon when the accordion is active/open */
+.activefaq:after {
+  content: "\25B2"; /* Unicode character for up arrow */
+  transform: rotate(180deg); /* Rotation de l'icône lorsqu'elle est active */
+}
+.faq-reponse {
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  .faq-left-description{
+    font-size: 1.5rem;
+  }
+  .faq-hero{
+    flex-direction: column-reverse;
+  }
+  .faq-container{
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+
+
+@media screen and (max-width: 801px) {
+}
